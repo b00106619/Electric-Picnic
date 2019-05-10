@@ -1,0 +1,90 @@
+<!doctype html>
+<html><head>
+	<meta charset="utf-8">
+	<title>Index</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron|Titillium+Web" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	</head>
+
+	<body>
+    <div class="container">
+      <header> <a href=""><img src="images/chat.png" alt="link to chat"></a> <a href="https://www.facebook.com/Electricpicnic/" target="_blank"><img src="images/facebook.png" alt="link to facebook"></a> <a href="index.html"><img src="images/eplogo.png" class="logo" alt="Logo of Electric Picnic"></a> <a href="https://www.instagram.com/epfestival/" target="_blank"><img src="images/instagram.png" alt="link to instagram"></a> <a href="https://twitter.com/EPfestival" target="_blank"><img src="images/twitter.png" alt="link to twitter"></a> </header>
+      <nav class="header_img">
+        <nav class="clearfix">
+          <ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="info.html">Information</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="events.html">Coming Events</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="video.html">Sitemap</a></li>
+          </ul>
+          <a href="#" id="pull">Menu</a> </nav>
+        <div class="navbar"> <a href="index.html">Home</a> <a href="tickets.html">Tickets</a>
+          <div class="dropdown"> <a class="dropbtn" href="info.html">Information</a>
+            <div class="dropdown-content"> <a href="artists.html">Artists</a> <a href="map.html">Map</a> <a href="events.html">Coming events</a> </div>
+          </div>
+          <a href="photos.html">Photos</a> <a href="video.html">Videos</a> <a href="sitemap.html">Sitemap</a> </div>
+      </nav>
+      <div class="body">
+        <div id="home_header">
+          <h1>Tickets are all sold out!</h1>
+          <p><br>Electric Picnic tickets for next year’s festival went on sale this morning at 9am and sold out in just 15 minutes; record time.
+            For the first time ever in the festival’s 15 year history, tickets sold out months in advance of the line-up being revealed, which is testament to the enduring popularity of Ireland’s biggest music and arts festival.</p>
+        </div>
+        <div class="column1">
+          <h2>TRENCHTOWN</h2>
+          <p><br>A truly immersive experience Trenchtown transports festival goers to idyllic islands, a cultural exchange encouraging its visitors to experience a unique fusion of Jamaican, African and Celtic roots and customs. <br> Elsewhere in Trenchtown, exotic cuisine, tropical cocktails, blue mountain coffee, interactive drum & dance workshops and many more surprises await to be discovered. Trenchtown is more than a festival arena - It’s a way of life!</p>
+        </div>
+        <div class="column2">
+          <h2>BODY&SOUL</h2>
+          <p><br>Body&Soul is an Irish creative collective, with a heart-shaped mind and a cutting-edge soul. Body&Soul brings together a collaboration of artists, musicians, poets and performers in a shimmering, chilled-out, enchanted environment - an eclectic mix of electronic and visual arts from homegrown talent, emerging artists and a selection of international guests.</p>
+        </div>
+        <div class="column3">
+          <h2>THEATRE OF FOOD</h2>
+          <p><br>On a beautifully curated stage in the middle of Mindfield, Theatre of Food is where the most talented food lovers in Ireland get all funky, all weekend long. With inspiring food demonstrations, wacky cocktail masterclasses, mind-boggling food discussions and lots more, Theatre of Food puts the theatrics into Ireland’s contemporary food culture.</p>
+        </div>
+      </div>
+      <footer>
+        <hr>
+        <div id="col1">
+          <h2>Sponsors</h2>
+          <br>
+          <a href="https://aib.ie" target="_blank"><img src="images/aib_0.png" alt="aib logo"></a> <a href="https://www.bacardi.com" target="_blank"><img src="images/bacardi.png" alt="bacardi logo"></a> <a href="https://www.electricireland.ie" target="_blank"><img src="images/electric-ireland.png" alt="electric ireland logo"></a> <a href="https://www.heineken.com" target="_blank"><img src="images/heinekein.png" alt="heinekein logo"></a> <a href="https://www.tesco.ie" target="_blank"><img src="images/tesco.png" alt="tesco logo"></a> <a href="https://www.just-eat.ie" target="_blank"><img src="images/just-eat.png" alt="just eat logo"></a> <a href="https://www.three.ie" target="_blank"><img src="images/three.png" alt="three logo"></a> <a href="https://www.redbull.com/ie-en/" target="_blank"><img src="images/red-bull.png" alt="red bull logo"></a> </div>
+        <div id="col2">
+          <h2>Electric Picnic information</h2>
+          <br>
+          <p>Stradbally Hall,<br>
+            Cork Road,<br>
+            Stradbally,<br>
+            Co. Laois </p>
+        </div>
+        <p id="credits">&copy; Made by Andrej Liapin, B00106619.</p>
+      </footer>
+    </div>
+</body>
+</html>
